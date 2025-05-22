@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: telegram-feedback-bot
+    env: python
+    plan: free
+    buildCommand: ""
+    startCommand: python main.py
+    envVars:
+      - key: API_TOKEN
+        value: "PASTE_YOUR_TOKEN"
+      - key: ADMIN_CHAT_ID
+        value: "PASTE_YOUR_TELEGRAM_ID"
